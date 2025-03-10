@@ -40,7 +40,7 @@ class PrivateManufacturerListViewTest(TestCase):
             list(response.context["manufacturer_list"]),
             list(manufacturers)
         )
-        self.assertTemplateUsed("taxi/manufacturer_list.html")
+        self.assertTemplateUsed(response, "taxi/manufacturer_list.html")
 
 
 class SearchTest(TestCase):

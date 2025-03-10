@@ -1,9 +1,8 @@
 from django.contrib.auth import get_user, get_user_model
 from django.template.defaultfilters import first
 from django.test import TestCase
-from pkg_resources.extern import names
 
-from taxi.models import Manufacturer, Driver, Car
+from taxi.models import Manufacturer, Car
 
 
 class ModelTest(TestCase):
